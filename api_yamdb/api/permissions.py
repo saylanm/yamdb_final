@@ -35,3 +35,4 @@ class IsAdminPermission(BasePermission):
                 request.user.role == 'admin'
                 or request.user.is_superuser
             )
+        return None
